@@ -71,22 +71,22 @@ export const skills = [
   {
     title: "Languages",
     icon: Code,
-    items: ["Python", "Go (Golang)", "TypeScript", "Bash / Shell", "SQL", "Rust"]
+    items: ["JavaScript (ES6+)", "Python", "C/C++", "Java", "SQL", "TypeScript"]
   },
   {
-    title: "Cloud & Infra",
-    icon: Cloud,
-    items: ["AWS (Solutions Architect)", "Terraform", "Ansible", "Linux Admin", "Azure", "GCP"]
-  },
-  {
-    title: "DevOps & CI/CD",
-    icon: GitMerge,
-    items: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "ArgoCD", "Helm Charts"]
-  },
-  {
-    title: "MLOps & Data",
+    title: "Full Stack & Frameworks",
     icon: Database,
-    items: ["MLflow", "Kubeflow", "Airflow", "Pinecone", "PyTorch", "Grafana / Prometheus"]
+    items: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Bootstrap"]
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: Cloud,
+    items: ["AWS", "Google Cloud", "Docker", "Git/GitHub", "CI/CD Concepts", "Vercel / Render"]
+  },
+  {
+    title: "Testing & Automation",
+    icon: GitMerge,
+    items: ["Selenium", "Cypress", "Postman (API Testing)", "JIRA", "Manual Testing", "Figma"]
   }
 ];
 
