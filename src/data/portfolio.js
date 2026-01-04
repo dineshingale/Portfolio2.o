@@ -1,69 +1,93 @@
-import { 
-  Container, 
-  Activity, 
-  GitMerge, 
-  Cpu, 
-  Cloud, 
-  Code, 
-  Database, 
-  Terminal 
+import {
+  Container,
+  Activity,
+  GitMerge,
+  Cpu,
+  Cloud,
+  Code,
+  Database,
+  Terminal,
+  FolderOpen,
+  CheckSquare
 } from 'lucide-react';
 
 export const projects = [
   {
-    title: "Self-Healing K8s Cluster",
-    subtitle: "Implemented an event-driven autoscaler using Prometheus metrics to predict load spikes and preemptively scale nodes, reducing downtime by 99.9%.",
-    category: "Infrastructure",
-    gradient: "from-blue-600 to-cyan-500",
-    tags: ["Kubernetes", "Go", "Prometheus", "AWS EKS"],
-    icon: Container,
-    link: "#",
-    size: "md:col-span-1 md:row-span-2",
-    type: "infrastructure"
-  },
-  {
-    title: "LLM RAG Pipeline Engine",
-    subtitle: "End-to-end MLOps pipeline for training and deploying Retrieval Augmented Generation models. Includes drift detection, automated retraining triggers, and vector DB indexing.",
-    category: "AI / MLOps",
+    title: "Resume Optimizer",
+    subtitle: "Architected a modular GenAI automation tool using Gemini Pro API and Python, implementing prompt engineering to reduce manual editing time by 90%.",
+    category: "AI / GenAI",
     gradient: "from-purple-600 to-pink-500",
-    tags: ["Python", "LangChain", "Docker", "Pinecone", "MLflow"],
-    icon: Activity,
-    link: "#",
+    tags: ["Python", "Gemini Pro", "NLP", "Git"],
+    icon: Cpu,
+    link: "https://github.com/dineshingale2003",
     size: "md:col-span-2 md:row-span-1",
-    type: "mlops"
+
   },
   {
-    title: "Enterprise GitOps Dashboard",
-    subtitle: "A centralized control plane visualizing ArgoCD application states across 5 environments (Dev to Prod) with one-click rollback capabilities.",
+    title: "System Health Monitor",
+    subtitle: "Real-time cross-platform infrastructure dashboard integrating a FastAPI backend with Bash/PowerShell collectors to capture granular system metrics.",
     category: "DevOps",
     gradient: "from-orange-500 to-red-500",
-    tags: ["React", "TypeScript", "ArgoCD", "GraphQL"],
-    icon: GitMerge,
-    link: "#",
+    tags: ["FastAPI", "React", "Bash", "YAML"],
+    icon: Activity,
+    link: "https://github.com/dineshingale2003",
     size: "md:col-span-1 md:row-span-1",
-    type: "fullstack"
+
   },
   {
-    title: "Edge Vision Inference",
-    subtitle: "Deployed quantized YOLOv8 models to a fleet of raspberry pis using Ansible and K3s for real-time manufacturing defect detection.",
-    category: "Edge ML",
+    title: "Automated File Organizer",
+    subtitle: "Decoupled full-stack application using FastAPI and React to manage local file systems via YAML-based automation rules.",
+    category: "Automation",
+    gradient: "from-yellow-400 to-orange-300",
+    tags: ["Python", "FastAPI", "React", "YAML"],
+    icon: FolderOpen,
+    link: "https://github.com/dineshingale2003",
+    size: "md:col-span-1 md:row-span-1",
+
+  },
+  {
+    title: ".NET Todo App",
+    subtitle: "Modern task management solution architected with .NET 10 and Razor Pages, using Entity Framework Core for strict data persistence.",
+    category: "Full Stack",
+    gradient: "from-violet-600 to-indigo-600",
+    tags: [".NET 10", "C#", "Razor Pages", "SQLite"],
+    icon: CheckSquare,
+    link: "https://github.com/dineshingale2003",
+    size: "md:col-span-1 md:row-span-1",
+
+  },
+  {
+    title: "Go Search Tool",
+    subtitle: "High-concurrency file indexing engine and search tool with a React frontend, optimized for near-native speed data retrieval.",
+    category: "Backend",
+    gradient: "from-blue-600 to-cyan-500",
+    tags: ["Go (Golang)", "React", "Vite", "CLI"],
+    icon: Code,
+    link: "https://github.com/dineshingale2003",
+    size: "md:col-span-1 md:row-span-2",
+
+  },
+  {
+    title: "Gagan Yatri",
+    subtitle: "MERN stack space tourism booking platform featuring automated regression testing (Cypress) and CI/CD pipelines on Render.",
+    category: "Full Stack",
     gradient: "from-emerald-500 to-teal-500",
-    tags: ["TensorFlow Lite", "Ansible", "MQTT", "K3s"],
-    icon: Cpu,
-    link: "#",
+    tags: ["MERN Stack", "Cypress", "CI/CD", "Render"],
+    icon: Cloud,
+    link: "https://github.com/dineshingale2003",
     size: "md:col-span-2 md:row-span-1",
-    type: "mlops"
+
   },
   {
-    title: "Terraform Module Registry",
-    subtitle: "Created a private registry of compliant infrastructure modules used by 20+ squads to provision secure AWS resources.",
-    category: "IaC",
+    title: "CloudKeep CMS",
+    subtitle: "Scalable content management system handling 100GB+ of unstructured data, integrating Cloudinary for media processing.",
+    category: "Cloud",
     gradient: "from-indigo-500 to-violet-500",
-    tags: ["Terraform", "AWS", "OPA Policy"],
-    icon: Cloud,
-    link: "#",
+    tags: ["TypeScript", "MongoDB", "Cloudinary", "JWT"],
+    icon: Database,
+    link: "https://github.com/dineshingale2003",
     size: "md:col-span-1 md:row-span-1",
-    type: "infrastructure"
+
   }
 ];
 
@@ -71,42 +95,30 @@ export const skills = [
   {
     title: "Languages",
     icon: Code,
-    items: ["JavaScript (ES6+)", "Python", "C/C++", "Java", "SQL", "TypeScript"]
+    items: ["Python", "JavaScript (ES6+)", "TypeScript", "Go (Golang)", "C# (.NET)", "SQL", "Bash/PowerShell"]
   },
   {
     title: "Full Stack & Frameworks",
     icon: Database,
-    items: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Bootstrap"]
+    items: ["React.js", "Node.js", "Express.js", "FastAPI", ".NET 10", "Tailwind CSS", "MongoDB"]
   },
   {
     title: "Cloud & DevOps",
     icon: Cloud,
-    items: ["AWS", "Google Cloud", "Docker", "Git/GitHub", "CI/CD Concepts", "Vercel / Render"]
+    items: ["Docker", "AWS", "GCP", "CI/CD Pipelines", "Vercel / Render", "YAML", "Gemini Pro Integration"]
   },
   {
-    title: "Testing & Automation",
+    title: "QA & Methodologies",
     icon: GitMerge,
-    items: ["Selenium", "Cypress", "Postman (API Testing)", "JIRA", "Manual Testing", "Figma"]
+    items: ["Cypress", "Selenium", "Postman", "JIRA", "Agile/Scrum", "Git/GitHub", "System Design"]
   }
 ];
 
 export const experience = [
-  { 
-    role: "Senior DevOps Engineer", 
-    company: "TechFlow Systems", 
-    date: "2022 - Present", 
-    desc: "Spearheading the migration of legacy monoliths to microservices on EKS. Reduced deployment time by 60% and infrastructure costs by 25% via spot instances." 
-  },
-  { 
-    role: "ML Infrastructure Engineer", 
-    company: "DataScale AI", 
-    date: "2020 - 2022", 
-    desc: "Designed and implemented a custom ML training platform serving 30+ Data Scientists. Automating model versioning and rollout using MLflow and Jenkins." 
-  },
-   { 
-    role: "Software Engineer", 
-    company: "Innovate Corp", 
-    date: "2018 - 2020", 
-    desc: "Full stack development using React and Python. Introduced containerization (Docker) to the development workflow, eliminating environment parity issues." 
+  {
+    role: "Google AI/ML Intern",
+    company: "EduSkills Foundation",
+    date: "Jan 2025 - Mar 2025",
+    desc: "Architected a scalable MERN stack application for image processing and fine-tuned pre-trained computer vision models. Implemented Docker containerization and CI/CD pipelines for automated testing and rapid deployment."
   }
 ];
