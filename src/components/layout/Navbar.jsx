@@ -17,7 +17,7 @@ const Navbar = () => {
           <a href="#projects" className="hover:text-black transition-colors">Projects</a>
         </div>
         <div className="flex gap-4">
-           <a href="mailto:hello@example.com" className="px-5 py-2.5 bg-black text-white text-sm font-bold rounded-full hover:bg-neutral-800 transition-all hover:scale-105 shadow-md">
+           <a href="mailto:dineshingale2003@gmail.com" className="px-5 py-2.5 bg-black text-white text-sm font-bold rounded-full hover:bg-neutral-800 transition-all hover:scale-105 shadow-md">
              Let's Talk
            </a>
         </div>
