@@ -15,24 +15,24 @@ const About = () => {
             </div>
             <div className="space-y-6 text-neutral-300 leading-relaxed text-lg">
               <p>
-                With over 5 years of experience in the software industry, I've evolved from a backend developer to a specialized MLOps Engineer. My passion lies in solving the "it works on my machine" problem for massive AI models.
+                I am a final-year <span className="text-white font-semibold">Information Technology</span> student with a unique focus on bridging the gap between full-stack engineering and Artificial Intelligence.
               </p>
               <p>
-                I believe that <span className="text-white font-semibold">infrastructure is code</span> and that the best pipelines are invisible. Whether it's optimizing GPU utilization or securing API endpoints, I build systems that allow data scientists to focus on math, not servers.
+                From architecting decoupled <span className="text-white font-semibold">MERN</span> infrastructures to fine-tuning Computer Vision models, I build systems that are not just functional but intelligent. My approach combines disciplined <span className="text-white font-semibold">DevOps</span> practices with creative problem-solving to deliver production-ready applications.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-8 mt-8">
                 <div>
-                    <div className="text-4xl font-bold text-white mb-1">5+</div>
-                    <div className="text-sm text-neutral-500 uppercase tracking-wider">Years Exp</div>
+                    <div className="text-4xl font-bold text-white mb-1">2026</div>
+                    <div className="text-sm text-neutral-500 uppercase tracking-wider">Graduation Year</div>
                 </div>
                 <div>
-                    <div className="text-4xl font-bold text-white mb-1">50+</div>
+                    <div className="text-4xl font-bold text-white mb-1">8+</div>
                     <div className="text-sm text-neutral-500 uppercase tracking-wider">Projects</div>
                 </div>
                 <div>
-                    <div className="text-4xl font-bold text-white mb-1">12</div>
+                    <div className="text-4xl font-bold text-white mb-1">4</div>
                     <div className="text-sm text-neutral-500 uppercase tracking-wider">Certifications</div>
                 </div>
             </div>
@@ -47,13 +47,13 @@ const About = () => {
             </div>
             <div className="space-y-2 text-neutral-400">
               <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> whoami</p>
-              <p className="text-white">DevOps_Engineer & MLOps_Specialist</p>
-              <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> cat skills.json</p>
+              <p className="text-white">Software_Engineer & AI_Integrator</p>
+              <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> cat stack.json</p>
               <p className="text-yellow-300">
                 {'{'} <br/>
-                &nbsp;&nbsp;"cloud": "AWS", <br/>
-                &nbsp;&nbsp;"containerization": "Docker", <br/>
-                &nbsp;&nbsp;"orchestration": "K8s" <br/>
+                &nbsp;&nbsp;"core": "MERN Stack", <br/>
+                &nbsp;&nbsp;"ai": "Gemini/TensorFlow", <br/>
+                &nbsp;&nbsp;"ops": "Docker/CI/CD" <br/>
                 {'}'}
               </p>
               <p className="animate-pulse">_</p>
