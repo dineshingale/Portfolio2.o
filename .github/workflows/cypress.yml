@@ -1,0 +1,20 @@
+name: Cypress Tests
+
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          # Build the app if necessary (optional for dev mode but good practice)
+          build: npm run build
+          # Start the server
+          start: npm run dev
+          # Wait for the server to offer a response on this URL
+          wait-on: 'http://localhost:5173'
