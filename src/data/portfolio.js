@@ -19,7 +19,7 @@ export const projects = [
     gradient: "from-purple-600 to-pink-500",
     tags: ["Python", "Gemini Pro", "NLP", "Git"],
     icon: Cpu,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/Resume_Optimizer",
     size: "md:col-span-2 md:row-span-1",
 
   },
@@ -30,7 +30,7 @@ export const projects = [
     gradient: "from-orange-500 to-red-500",
     tags: ["FastAPI", "React", "Bash", "YAML"],
     icon: Activity,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/System-health-monitor",
     size: "md:col-span-1 md:row-span-1",
 
   },
@@ -41,7 +41,7 @@ export const projects = [
     gradient: "from-yellow-400 to-orange-300",
     tags: ["Python", "FastAPI", "React", "YAML"],
     icon: FolderOpen,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/File-organizer",
     size: "md:col-span-1 md:row-span-1",
 
   },
@@ -63,7 +63,7 @@ export const projects = [
     gradient: "from-blue-600 to-cyan-500",
     tags: ["Go (Golang)", "React", "Vite", "CLI"],
     icon: Code,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/go-search-tool",
     size: "md:col-span-1 md:row-span-2",
 
   },
@@ -74,7 +74,7 @@ export const projects = [
     gradient: "from-emerald-500 to-teal-500",
     tags: ["MERN Stack", "Cypress", "CI/CD", "Render"],
     icon: Cloud,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/GaganYatri",
     size: "md:col-span-2 md:row-span-1",
 
   },
@@ -85,7 +85,7 @@ export const projects = [
     gradient: "from-indigo-500 to-violet-500",
     tags: ["TypeScript", "MongoDB", "Cloudinary", "JWT"],
     icon: Database,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/Cloudkeep-client",
     size: "md:col-span-1 md:row-span-1",
 
   },
@@ -96,7 +96,7 @@ export const projects = [
     gradient: "from-emerald-400 to-cyan-400",
     tags: ["Python", "FastAPI", "React", "Scikit-Learn", "NLP"],
     icon: Terminal,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/InsuranceClaim-AI",
     size: "md:col-span-1 md:row-span-1",
 
   },
@@ -107,7 +107,7 @@ export const projects = [
     gradient: "from-green-500 to-emerald-600",
     tags: ["React", "FastAPI", "TensorFlow Lite", "Docker"],
     icon: Container,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/Plant-Recognizer",
     size: "md:col-span-1 md:row-span-1",
 
   }
