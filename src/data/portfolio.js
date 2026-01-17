@@ -122,17 +122,22 @@ export const skills = [
   {
     title: "Full Stack & Frameworks",
     icon: Database,
-    items: ["React.js", "Node.js", "Express.js", "FastAPI", ".NET 10", "Tailwind CSS", "MongoDB"]
+    items: ["React.js", "Node.js", "Express.js", ".NET 10", "Tailwind CSS", "MongoDB"]
+  },
+  {
+    title: "AI/ML & GenAI Integration:",
+    icon: Cpu,
+    items: ["LLM Integration (Gemini Pro)", "NLP", "Computer Vision", "Python", "FastAPI", "React", "Scikit-Learn"]
   },
   {
     title: "Cloud & DevOps",
     icon: Cloud,
-    items: ["Docker", "AWS", "GCP", "CI/CD Pipelines", "Vercel / Render", "YAML", "Gemini Pro Integration"]
+    items: ["Docker", "CI/CD Pipelines", "Jenkins", "GithubActions", "Vercel / Render", "YAML", "Git/GitHub"]
   },
   {
     title: "QA & Methodologies",
     icon: GitMerge,
-    items: ["Cypress", "Selenium", "Postman", "JIRA", "Agile/Scrum", "Git/GitHub", "System Design"]
+    items: ["PlayWright", "Cypress", "Selenium", "Postman", "JIRA", "Agile/Scrum", "GitHub issues", "System Design"]
   }
 ];
 
