@@ -52,7 +52,7 @@ export const projects = [
     gradient: "from-violet-600 to-indigo-600",
     tags: [".NET 10", "C#", "Razor Pages", "SQLite"],
     icon: CheckSquare,
-    link: "https://github.com/dineshingale2003",
+    link: "https://github.com/dineshingale/dotnet-TodoApp",
     size: "md:col-span-1 md:row-span-1",
 
   },
