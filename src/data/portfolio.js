@@ -88,6 +88,28 @@ export const projects = [
     link: "https://github.com/dineshingale2003",
     size: "md:col-span-1 md:row-span-1",
 
+  },
+  {
+    title: "InsuranceClaim AI",
+    subtitle: "Engineered a multi-modal AI platform combining NLP and Anomaly Detection to automate claim classification and fraud detection.",
+    category: "AI / ML",
+    gradient: "from-emerald-400 to-cyan-400",
+    tags: ["Python", "FastAPI", "React", "Scikit-Learn", "NLP"],
+    icon: Terminal,
+    link: "https://github.com/dineshingale2003",
+    size: "md:col-span-1 md:row-span-1",
+
+  },
+  {
+    title: "Plant Recognizer",
+    subtitle: "Full-stack AI application using TensorFlow Lite and FastAPI for real-time plant species identification with optimized inference.",
+    category: "AI / Computer Vision",
+    gradient: "from-green-500 to-emerald-600",
+    tags: ["React", "FastAPI", "TensorFlow Lite", "Docker"],
+    icon: Container,
+    link: "https://github.com/dineshingale2003",
+    size: "md:col-span-1 md:row-span-1",
+
   }
 ];
 
