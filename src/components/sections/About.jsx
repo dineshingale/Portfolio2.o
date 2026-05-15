@@ -1,5 +1,6 @@
 import React from 'react';
 import { User } from 'lucide-react';
+import { siteConfig } from '../../data/portfolio';
 
 const About = () => {
   return (
@@ -11,30 +12,24 @@ const About = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <User className="text-indigo-400" />
-              <h2 className="text-3xl font-bold">About Me</h2>
+              <h2 className="text-3xl font-bold">{siteConfig.about.heading}</h2>
             </div>
             <div className="space-y-6 text-neutral-300 leading-relaxed text-lg">
               <p>
-                I am a final-year <span className="text-white font-semibold">Information Technology</span> student with a unique focus on bridging the gap between full-stack engineering and Artificial Intelligence.
+                {siteConfig.about.description.p1_part1} <span className="text-white font-semibold">{siteConfig.about.description.p1_highlight}</span> {siteConfig.about.description.p1_part2}
               </p>
               <p>
-                From architecting decoupled <span className="text-white font-semibold">MERN</span> infrastructures to fine-tuning Computer Vision models, I build systems that are not just functional but intelligent. My approach combines disciplined <span className="text-white font-semibold">DevOps</span> practices with creative problem-solving to deliver production-ready applications.
+                {siteConfig.about.description.p2_part1} <span className="text-white font-semibold">{siteConfig.about.description.p2_highlight1}</span> {siteConfig.about.description.p2_part2} <span className="text-white font-semibold">{siteConfig.about.description.p2_highlight2}</span> {siteConfig.about.description.p2_part3}
               </p>
             </div>
             
             <div className="flex flex-wrap gap-8 mt-8">
-                <div>
-                    <div className="text-4xl font-bold text-white mb-1">2026</div>
-                    <div className="text-sm text-neutral-500 uppercase tracking-wider">Graduation Year</div>
+              {siteConfig.about.stats.map((stat, index) => (
+                <div key={index}>
+                    <div className="text-4xl font-bold text-white mb-1">{stat.value}</div>
+                    <div className="text-sm text-neutral-500 uppercase tracking-wider">{stat.label}</div>
                 </div>
-                <div>
-                    <div className="text-4xl font-bold text-white mb-1">8+</div>
-                    <div className="text-sm text-neutral-500 uppercase tracking-wider">Projects</div>
-                </div>
-                <div>
-                    <div className="text-4xl font-bold text-white mb-1">4</div>
-                    <div className="text-sm text-neutral-500 uppercase tracking-wider">Certifications</div>
-                </div>
+              ))}
             </div>
           </div>
 
@@ -47,13 +42,13 @@ const About = () => {
             </div>
             <div className="space-y-2 text-neutral-400">
               <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> whoami</p>
-              <p className="text-white">Software_Engineer & AI_Integrator</p>
+              <p className="text-white">{siteConfig.about.terminal.role}</p>
               <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> cat stack.json</p>
               <p className="text-yellow-300">
                 {'{'} <br/>
-                &nbsp;&nbsp;"core": "MERN Stack", <br/>
-                &nbsp;&nbsp;"ai": "Gemini/TensorFlow", <br/>
-                &nbsp;&nbsp;"ops": "Docker/CI/CD" <br/>
+                &nbsp;&nbsp;"core": "{siteConfig.about.terminal.stack.core}", <br/>
+                &nbsp;&nbsp;"ai": "{siteConfig.about.terminal.stack.ai}", <br/>
+                &nbsp;&nbsp;"ops": "{siteConfig.about.terminal.stack.ops}" <br/>
                 {'}'}
               </p>
               <p className="animate-pulse">_</p>

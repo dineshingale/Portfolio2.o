@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from '../ui/ProjectCard';
-import { projects } from '../../data/portfolio';
+import { projects, siteConfig } from '../../data/portfolio';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -13,13 +13,13 @@ const Projects = () => {
     <section id="projects" className="mb-20">
       <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
         <div>
-          <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
-          <p className="text-neutral-500">End-to-end executions from code to cloud.</p>
+          <h2 className="text-3xl font-bold mb-2">{siteConfig.projects.heading}</h2>
+          <p className="text-neutral-500">{siteConfig.projects.description}</p>
         </div>
         
         {/* Filter Tabs */}
         <div className="flex bg-white p-1 rounded-xl border border-neutral-200 shadow-sm">
-          {['all', 'infrastructure', 'mlops', 'fullstack'].map((tab) => (
+          {siteConfig.projects.tabs.map((tab) => (
             <button 
               key={tab}
               onClick={() => setActiveTab(tab)}
