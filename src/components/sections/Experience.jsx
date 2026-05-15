@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layers, Zap, ArrowUpRight } from 'lucide-react';
-import { experience } from '../../data/portfolio';
+import { experience, siteConfig } from '../../data/portfolio';
 
 const Experience = () => {
   return (
@@ -8,7 +8,7 @@ const Experience = () => {
         <div className="md:col-span-2 bg-white rounded-3xl p-8 border border-neutral-100 shadow-sm">
             <div className="flex items-center gap-3 mb-8">
                 <Layers className="text-indigo-600" />
-                <h3 className="text-xl font-bold">Professional Journey</h3>
+                <h3 className="text-xl font-bold">{siteConfig.experience.heading}</h3>
             </div>
             
             <div className="space-y-10 relative">
@@ -41,14 +41,14 @@ const Experience = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm">
                   <Zap className="text-yellow-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Ready to optimize your workflow?</h3>
+                <h3 className="text-2xl font-bold mb-4">{siteConfig.experience.cta.heading}</h3>
                 <p className="text-neutral-400 mb-8 leading-relaxed">
-                  I'm currently accepting new projects. Whether you need a full CI/CD audit or an MLOps platform from scratch, let's connect.
+                  {siteConfig.experience.cta.description}
                 </p>
             </div>
             
-            <a href="mailto:email@example.com" className="relative z-10 inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-6 py-4 rounded-xl font-bold hover:bg-neutral-100 transition-all hover:translate-y-[-2px]">
-                Start a Project <ArrowUpRight size={18} />
+            <a href={`mailto:${siteConfig.experience.cta.email}`} className="relative z-10 inline-flex items-center justify-center gap-2 bg-white text-neutral-900 px-6 py-4 rounded-xl font-bold hover:bg-neutral-100 transition-all hover:translate-y-[-2px]">
+                {siteConfig.experience.cta.buttonText} <ArrowUpRight size={18} />
             </a>
         </div>
     </div>

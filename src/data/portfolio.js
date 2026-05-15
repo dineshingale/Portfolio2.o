@@ -1,143 +1,82 @@
 import {
-  Container,
   Activity,
-  GitMerge,
   Cpu,
-  Cloud,
   Code,
   Database,
   Terminal,
-  FolderOpen,
-  CheckSquare
+  Layers,
+  GitMerge,
+  Container
 } from 'lucide-react';
 
 export const projects = [
   {
     title: "Resume Optimizer",
-    subtitle: "Architected a modular GenAI automation tool using Gemini Pro API and Python, implementing prompt engineering to reduce manual editing time by 90%.",
-    category: "AI / GenAI",
+    subtitle: "Engineered an AI resume optimization platform using Google Gemini LLM and advanced prompt engineering to intelligently tailor resumes against job descriptions with 100% document structure preservation.",
+    category: "GenAI / NLP",
     gradient: "from-purple-600 to-pink-500",
-    tags: ["Python", "Gemini Pro", "NLP", "Git"],
+    tags: ["Python", "Google Gemini", "Prompt Engineering", "NLP", "JSON Parsing", "Git"],
     icon: Cpu,
     link: "https://github.com/dineshingale/Resume_Optimizer",
     size: "md:col-span-2 md:row-span-1",
-
   },
   {
-    title: "System Health Monitor",
-    subtitle: "Real-time cross-platform infrastructure dashboard integrating a FastAPI backend with Bash/PowerShell collectors to capture granular system metrics.",
-    category: "DevOps",
+    title: "ChurnPredictor",
+    subtitle: "Architected an end-to-end ML pipeline using XGBoost and BigQuery for real-time customer churn prediction, achieving 87% accuracy with experiment tracking via Weights & Biases.",
+    category: "Machine Learning",
     gradient: "from-orange-500 to-red-500",
-    tags: ["FastAPI", "React", "Bash", "YAML"],
+    tags: ["Python", "XGBoost", "BigQuery", "Scikit-Learn", "Weights & Biases"],
     icon: Activity,
     link: "https://github.com/dineshingale/System-health-monitor",
     size: "md:col-span-1 md:row-span-1",
-
   },
   {
-    title: "Automated File Organizer",
-    subtitle: "Decoupled full-stack application using FastAPI and React to manage local file systems via YAML-based automation rules.",
-    category: "Automation",
-    gradient: "from-yellow-400 to-orange-300",
-    tags: ["Python", "FastAPI", "React", "YAML"],
-    icon: FolderOpen,
-    link: "https://github.com/dineshingale/File-organizer",
-    size: "md:col-span-1 md:row-span-1",
-
-  },
-  {
-    title: ".NET Todo App",
-    subtitle: "Modern task management solution architected with .NET 10 and Razor Pages, using Entity Framework Core for strict data persistence.",
-    category: "Full Stack",
-    gradient: "from-violet-600 to-indigo-600",
-    tags: [".NET 10", "C#", "Razor Pages", "SQLite"],
-    icon: CheckSquare,
-    link: "https://github.com/dineshingale/dotnet-TodoApp",
-    size: "md:col-span-1 md:row-span-1",
-
-  },
-  {
-    title: "Go Search Tool",
-    subtitle: "High-concurrency file indexing engine and search tool with a React frontend, optimized for near-native speed data retrieval.",
-    category: "Backend",
-    gradient: "from-blue-600 to-cyan-500",
-    tags: ["Go (Golang)", "React", "Vite", "CLI"],
-    icon: Code,
-    link: "https://github.com/dineshingale/go-search-tool",
-    size: "md:col-span-1 md:row-span-2",
-
-  },
-  {
-    title: "Gagan Yatri",
-    subtitle: "MERN stack space tourism booking platform featuring automated regression testing (Cypress) and CI/CD pipelines on Render.",
-    category: "Full Stack",
-    gradient: "from-emerald-500 to-teal-500",
-    tags: ["MERN Stack", "Cypress", "CI/CD", "Render"],
-    icon: Cloud,
-    link: "https://github.com/dineshingale/GaganYatri",
-    size: "md:col-span-2 md:row-span-1",
-
-  },
-  {
-    title: "CloudKeep CMS",
-    subtitle: "Scalable content management system handling 100GB+ of unstructured data, integrating Cloudinary for media processing.",
-    category: "Cloud",
-    gradient: "from-indigo-500 to-violet-500",
-    tags: ["TypeScript", "MongoDB", "Cloudinary", "JWT"],
-    icon: Database,
-    link: "https://github.com/dineshingale/Cloudkeep-client",
-    size: "md:col-span-1 md:row-span-1",
-
-  },
-  {
-    title: "InsuranceClaim AI",
-    subtitle: "Engineered a multi-modal AI platform combining NLP and Anomaly Detection to automate claim classification and fraud detection.",
+    title: "InsuranceClaim-AI",
+    subtitle: "Built a fraud detection system utilizing Random Forest and Isolation Forest for claim assessment, achieving 89% accuracy in detecting high-risk claims with real-time API deployment.",
     category: "AI / ML",
     gradient: "from-emerald-400 to-cyan-400",
-    tags: ["Python", "FastAPI", "React", "Scikit-Learn", "NLP"],
+    tags: ["Python", "FastAPI", "Scikit-Learn", "Pandas", "React", "TypeScript"],
     icon: Terminal,
     link: "https://github.com/dineshingale/InsuranceClaim-AI",
     size: "md:col-span-1 md:row-span-1",
-
   },
   {
-    title: "Plant Recognizer",
-    subtitle: "Full-stack AI application using TensorFlow Lite and FastAPI for real-time plant species identification with optimized inference.",
-    category: "AI / Computer Vision",
+    title: "Flower Species Classifier",
+    subtitle: "Developed a custom CNN using TensorFlow/Keras optimized for multi-class classification. Engineered a high-performance input pipeline via tf.data API and deployed a FastAPI REST API for real-time inference.",
+    category: "Deep Learning / CV",
     gradient: "from-green-500 to-emerald-600",
-    tags: ["React", "FastAPI", "TensorFlow Lite", "Docker"],
+    tags: ["Python", "TensorFlow", "Keras", "FastAPI", "Weights & Biases", "tf.data"],
     icon: Container,
     link: "https://github.com/dineshingale/Plant-Recognizer",
     size: "md:col-span-1 md:row-span-1",
-
   }
 ];
 
 export const skills = [
   {
-    title: "Languages",
+    title: "Languages & Frameworks",
     icon: Code,
-    items: ["Python", "JavaScript (ES6+)", "TypeScript", "Go (Golang)", "C# (.NET)", "SQL", "Bash/PowerShell"]
+    items: ["Python", "C++", "SQL", "TypeScript (Basic)", "JavaScript (Basic)", "FastAPI"]
   },
   {
-    title: "Full Stack & Frameworks",
-    icon: Database,
-    items: ["React.js", "Node.js", "Express.js", ".NET 10", "Tailwind CSS", "MongoDB"]
+    title: "Machine Learning",
+    icon: Layers,
+    items: ["XGBoost", "Random Forest", "Decision Tree", "Pipelines", "Hyperparameter Tuning", "Scikit-Learn"]
   },
   {
-    title: "AI/ML & GenAI Integration:",
+    title: "Deep Learning & CV",
     icon: Cpu,
-    items: ["LLM Integration (Gemini Pro)", "NLP", "Computer Vision", "Python", "FastAPI", "React", "Scikit-Learn"]
+    items: ["TensorFlow", "Keras", "CNN", "Transfer Learning", "BatchNormalization", "Dropout"]
   },
   {
-    title: "Cloud & DevOps",
-    icon: Cloud,
-    items: ["Docker", "CI/CD Pipelines", "Jenkins", "GithubActions", "Vercel / Render", "YAML", "Git/GitHub"]
+    title: "Data & Big Data",
+    icon: Database,
+    items: ["BigQuery", "CTEs", "QueryJobConfig", "Data Transformation", "Pandas", "NumPy"]
   },
   {
-    title: "QA & Methodologies",
+    title: "Architecture & Tools",
     icon: GitMerge,
-    items: ["PlayWright", "Cypress", "Selenium", "Postman", "JIRA", "Agile/Scrum", "GitHub issues", "System Design"]
+    items: ["Weights & Biases (W&B)", "System Design", "REST APIs", "Agile/Scrum", "Git/GitHub", "SDLC"]
   }
 ];
 
@@ -146,6 +85,102 @@ export const experience = [
     role: "Google AI/ML Intern",
     company: "EduSkills Foundation",
     date: "Jan 2025 - Mar 2025",
-    desc: "Architected a scalable MERN stack application for image processing and fine-tuned pre-trained computer vision models. Implemented Docker containerization and CI/CD pipelines for automated testing and rapid deployment."
+    desc: "Built a custom CNN using TensorFlow/Keras optimized for multi-class classification. Engineered a high-performance data pipeline using the tf.data API for real-time preprocessing and deployed the model via a FastAPI REST API with confidence scoring."
   }
 ];
+
+export const siteConfig = {
+  navbar: {
+    logo: {
+      part1: "ML",
+      part2: "DL",
+      part3: "DS"
+    },
+    links: [
+      { name: "About", href: "#about" },
+      { name: "Stack", href: "#skills" },
+      { name: "Projects", href: "#projects" }
+    ],
+    buttonText: "Let's Talk",
+    email: "dineshingale2003@gmail.com"
+  },
+  hero: {
+    badge: "Available for Hire",
+    heading: {
+      line1: "Architecting",
+      highlight: "Intelligent",
+      line2: "ML Apps"
+    },
+    description: {
+      part1: "I'm",
+      name: "Dinesh Ingale",
+      part2: ". Machine learning engineer with experience in developing",
+      highlight1: "Generative AI",
+      part3: "applications and",
+      highlight2: "Deep learning",
+      part4: "applications"
+    },
+    socials: {
+      github: "https://github.com/dineshingale",
+      linkedin: "https://www.linkedin.com/in/dineshingale/"
+    },
+    resumeButtonText: "View Resume",
+    floatingBadge: {
+      title: "Experience",
+      subtitle: "Google AI/ML Intern"
+    }
+  },
+  about: {
+    heading: "About Me",
+    description: {
+      p1_part1: "I am a final-year",
+      p1_highlight: "Information Technology",
+      p1_part2: "student with a unique focus on bridging the gap between full-stack engineering and Artificial Intelligence.",
+      p2_part1: "From architecting decoupled",
+      p2_highlight1: "MERN",
+      p2_part2: "infrastructures to fine-tuning Computer Vision models, I build systems that are not just functional but intelligent. My approach combines disciplined",
+      p2_highlight2: "DevOps",
+      p2_part3: "practices with creative problem-solving to deliver production-ready applications."
+    },
+    stats: [
+      { value: "2026", label: "Graduation Year" },
+      { value: "8+", label: "Projects" },
+      { value: "4", label: "Certifications" }
+    ],
+    terminal: {
+      role: "Software_Engineer & AI_Integrator",
+      stack: {
+        core: "MERN Stack",
+        ai: "Gemini/TensorFlow",
+        ops: "Docker/CI/CD"
+      }
+    }
+  },
+  skills: {
+    heading: "Technical Arsenal",
+    description: "A curated stack of tools I use to build robust, scalable platforms."
+  },
+  projects: {
+    heading: "Featured Projects",
+    description: "End-to-end executions from code to cloud.",
+    tabs: ['all', 'infrastructure', 'mlops', 'fullstack']
+  },
+  experience: {
+    heading: "Professional Journey",
+    cta: {
+      heading: "Ready to optimize your workflow?",
+      description: "I'm currently accepting new projects. Whether you need a full CI/CD audit or an MLOps platform from scratch, let's connect.",
+      buttonText: "Start a Project",
+      email: "email@example.com"
+    }
+  },
+  footer: {
+    logo: "DevOps.AI",
+    copyrightText: "© 2026 Dinesh Ingale. Crafted with code.",
+    socials: {
+      github: "https://github.com/dineshingale",
+      linkedin: "https://www.linkedin.com/in/dineshingale/",
+      activity: "#"
+    }
+  }
+};

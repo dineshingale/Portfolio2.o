@@ -1,5 +1,6 @@
 import React from 'react';
 import { Terminal, Github, Linkedin, Activity } from 'lucide-react';
+import { siteConfig } from '../../data/portfolio';
 
 const Footer = () => {
   return (
@@ -10,15 +11,15 @@ const Footer = () => {
             <div className="w-6 h-6 bg-black rounded flex items-center justify-center text-white">
               <Terminal size={14} />
             </div>
-            <span className="font-bold text-lg">DevOps.AI</span>
+            <span className="font-bold text-lg">{siteConfig.footer.logo}</span>
           </div>
-          <p className="text-neutral-400 text-sm">© {new Date().getFullYear()} Dinesh Ingale. Crafted with code.</p>
+          <p className="text-neutral-400 text-sm">{siteConfig.footer.copyrightText}</p>
         </div>
 
         <div className="flex gap-6">
-          <a href="https://github.com/dineshingale" target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-50 rounded-full hover:bg-black hover:text-white transition-colors"><Github size={20} /></a>
-          <a href="https://www.linkedin.com/in/dineshingale/" target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-50 rounded-full hover:bg-blue-600 hover:text-white transition-colors"><Linkedin size={20} /></a>
-          <a href="#" className="p-2 bg-neutral-50 rounded-full hover:bg-pink-600 hover:text-white transition-colors"><Activity size={20} /></a>
+          <a href={siteConfig.footer.socials.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-50 rounded-full hover:bg-black hover:text-white transition-colors"><Github size={20} /></a>
+          <a href={siteConfig.footer.socials.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-neutral-50 rounded-full hover:bg-blue-600 hover:text-white transition-colors"><Linkedin size={20} /></a>
+          <a href={siteConfig.footer.socials.activity} className="p-2 bg-neutral-50 rounded-full hover:bg-pink-600 hover:text-white transition-colors"><Activity size={20} /></a>
         </div>
       </div>
     </footer>
